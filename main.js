@@ -1,21 +1,34 @@
-const tabs = document.querySelector('.tabs');
+//Selects all the elemetns with class .tab and .tab-content
+const tabItems = document.querySelectorAll('.tab');
+const tabContentItems = document.querySelectorAll('.tab-content')
 
-tabs.addEventListener('click', e => handleClick(e));
+function selectItems(e) {
+  removeActive();
+  this.classList.add('active');
+  removeShow();
+  const tabContentItem = document.querySelector(`#${this.id}-content`);
+  tabContentItem.classList.add('show');
+}
 
-function handleClick(e) {
-  const target = e.target;
-  const tabNum = target.dataset.tab;
-  const activeTab = document.querySelector('.tabs.active');
-  const activeContent = document.querySelctor('.content .visible');
-  const currentContent = document.querySelector(
-    `.content_section[data-tab='${tabNum}']`
-  );
+tabItems.forEach(item => {
+  item.addEventListener('click', selectItems);
+  });
 
-  if (!tabNum) {
-    return;
-  )
 
-  activeTab.classList.remove('active');
-  target.classList.add('active');
-  activeContent.classList.remove('visible');
-  currentContent.classList.add('visible');
+function removeActive() {
+  tabItems.forEach(item => {
+    item.classList.remove('active');
+    });
+}
+
+function removeShow() {
+  tabContentItems.forEach(item => {
+  item.classList.remove('show')
+  });
+}
+
+function removeFade() {
+  tabContentItems.forEach(item => {
+  item.classList.remove('fade')
+  });
+}
