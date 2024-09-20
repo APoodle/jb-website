@@ -1,5 +1,5 @@
 body {
-  background: black
+  background: radial-gradient(circle, rgba(31,0,61,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 ::selection {
@@ -90,13 +90,13 @@ a {
   visibility: visible; /* Makes the border visible on hover */
   animation: rainbow-border 3s linear infinite;
   opacity: 1;
-  transition: opacity 1s ease-in-out;/* Adds animation */
+  transition: opacity .5s ease-in-out;/* Adds animation */
 }
 
 .tab:hover {
   color: yellow;
   text-shadow: 0 0 5px white;
-  transition: all 1s ease-in-out;
+  transition: all .50s ease-in-out;
 }
 
 @keyframes rainbow-border {
@@ -111,14 +111,14 @@ a {
 .active {
   color: yellow;
   text-shadow: 0 0 5px white;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .tab.active::before {
   visibility: visible; /* Makes the border visible on hover */
   animation: rainbow-border 3s linear infinite;
   opacity: 1;
-  transition: opacity 1s ease-in-out;/* Adds animation */
+  transition: opacity .5s ease-in-out;/* Adds animation */
 }
 
 .tab-content {
