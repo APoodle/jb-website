@@ -71,6 +71,17 @@ a {
   cursor: pointer;/* Ensures proper sizing for inline elements */
 }
 
+.project {
+  color: gray;
+  text-decoration: none;
+}
+
+.project:hover {
+  color: white;
+  text-shadow: 0 0 2px white;
+  cursor: pointer;
+}
+
 .tab::before {
   content: '';
   position: absolute;
