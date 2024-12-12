@@ -1,5 +1,5 @@
 body {
-  background: radial-gradient(circle, rgba(31,0,61,1) 0%, rgba(0,0,0,1) 100%);
+  background: radial-gradient(circle, rgba(41,41,41,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 ::selection {
@@ -14,7 +14,7 @@ body {
   font-style: normal;
 }
 
-h1, h3, h4, a {
+h1, h2, h3, h4, p, a {
   color: antiquewhite;
 }
 
@@ -42,7 +42,7 @@ a {
 }
 
 .fixed {
-  width: 50%;
+  width: 35%;
   height: auto;
   position: fixed;
   top: 50%;
@@ -50,10 +50,10 @@ a {
 }
 
 .scroll {
-  width: 50%;
+  width: 65%;
   overflow-y: scroll;
   height: auto;
-  margin-left: 50%;
+  margin-left: 35%;
 }
 
 .tabs {
